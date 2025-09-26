@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoMística - Mapa</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("imagens/piramide_saotome.jpg") no-repeat center center;
-      background-size: cover;
-      opacity: 0.2; /* transparência do fundo */
-      z-index: -1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Turístico</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            background-image: url('piramide.png'); /* Fundo transparente da pirâmide */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .mapa {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        /* Botão de voltar */
+        .voltar {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            text-decoration: none;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 50%;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .voltar:hover {
+            background: rgba(0,0,0,0.9);
+        }
+    </style>
 </head>
-<body class="flex flex-col min-h-screen">
+<body>
+    <!-- Botão de voltar -->
+    <a href="index.html" class="voltar">⮌</a>
 
-  <!-- Header -->
-  <header class="py-6 flex justify-center">
-    <img src="imagens/logo-ecomistica.png" alt="EcoMística Logo" class="w-40">
-  </header>
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" class="logo">
 
-  <!-- Main -->
-  <main class="flex-grow flex flex-col items-center justify-center p-6 space-y-10">
-    
-    <!-- Primeira Imagem -->
-    <div class="w-full max-w-5xl shadow-lg rounded-2xl overflow-hidden">
-      <img src="imagens/mapa.jpg" alt="Mapa Turístico São Thomé das Letras - Zona Rural" class="w-full h-auto">
-    </div>
+    <!-- Mapa -->
+    <img src="MAPA.jpeg" alt="Mapa Turístico" class="mapa">
 
-    <!-- Segunda Imagem -->
-    <div class="w-full max-w-5xl shadow-lg rounded-2xl overflow-hidden">
-      <img src="imagens/roteiro-turistico.jpg" alt="Roteiro Turístico São Thomé das Letras" class="w-full h-auto">
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-emerald-100 text-emerald-900 py-6 text-center text-sm space-y-4">
-    <p>© 2025 EcoMística • Conectando turismo, natureza e espiritualidade</p>
-    
-    <!-- Botão Voltar -->
-    <a href="index.html" class="inline-block bg-emerald-200 hover:bg-emerald-300 text-emerald-900 font-semibold py-2 px-6 rounded-xl shadow-md transition">
-      Voltar para Home
-    </a>
-  </footer>
-
+    <!-- Rodapé -->
+    <footer>
+        © 2025 EcoMística - Todos os direitos reservados
+    </footer>
 </body>
 </html>
-
