@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMística - Mapa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("imagens/piramide_saotome.jpg") no-repeat center center;
+      background-size: cover;
+      opacity: 0.2; /* transparência do fundo */
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="py-6 flex justify-center">
+    <img src="imagens/logo-ecomistica.png" alt="EcoMística Logo" class="w-40">
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow flex flex-col items-center justify-center p-6 space-y-10">
+    
+    <!-- Primeira Imagem -->
+    <div class="w-full max-w-5xl shadow-lg rounded-2xl overflow-hidden">
+      <img src="imagens/mapa.jpg" alt="Mapa Turístico São Thomé das Letras - Zona Rural" class="w-full h-auto">
+    </div>
+
+    <!-- Segunda Imagem -->
+    <div class="w-full max-w-5xl shadow-lg rounded-2xl overflow-hidden">
+      <img src="imagens/roteiro-turistico.jpg" alt="Roteiro Turístico São Thomé das Letras" class="w-full h-auto">
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-100 text-emerald-900 py-4 text-center text-sm">
+    © 2025 EcoMística • Conectando turismo, natureza e espiritualidade
+  </footer>
+
+</body>
+</html>
 
